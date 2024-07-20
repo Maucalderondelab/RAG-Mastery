@@ -21,6 +21,11 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
 ## Introduction
 Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequience generation process. This framework combines the strengths of information retrieval and generative lenaguage models to enchance text generation capabilities. This approach operates by dynaically fetching relevant documents or data snippetss based on a given query and using this retrieved information to generate a coherent and contextually appropiate response.
 
+A simple diagram that show te key components and procces of RAG is this one.
+![Diagram Indexin, retrieval and generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/indexing_retrieval_generation.png)
+
+The image shows the system with Indexing, retrieval and generation.
+
 ## References
 - [freedocecamp](https://www.freecodecamp.org/news/mastering-rag-from-scratch/)
 - [HuggingFaces](https://search.brave.com/search?q=huggingfaces+RAG&source=desktop)
