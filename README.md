@@ -17,3 +17,11 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
   - [Query RAG](#query-rag)
   - [GraphRAG](#graphrag)
   - [RAG-Query on Python](#rag-query-on-python)
+- [References](#references)
+## Introduction
+Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequience generation process. This framework combines the strengths of information retrieval and generative lenaguage models to enchance text generation capabilities. This approach operates by dynaically fetching relevant documents or data snippetss based on a given query and using this retrieved information to generate a coherent and contextually appropiate response.
+
+## References
+- [freedocecamp](https://www.freecodecamp.org/news/mastering-rag-from-scratch/)
+- [HuggingFaces](https://search.brave.com/search?q=huggingfaces+RAG&source=desktop)
+- [Paper](https://arxiv.org/abs/2005.11401)
