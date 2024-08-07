@@ -1,7 +1,7 @@
 # RAG-Mastery: A Personal Path from Basic to Master in RAG
 Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented Generation (RAG). This repository is my space to document my journey from foundational concepts to the most advanced techniques, helping me understand and apply these methods effectively.
 
-## Table of Contents
+# Table of Contents
 
 - [Introduction](#introduction)
 - [Understanding RAG](#understanding-rag)
@@ -18,15 +18,26 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
   
 - [References](#references)
 
-## Introduction
+# Introduction
 Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequence generation process. This framework combines the strengths of information retrieval and generative language models to enhance text generation capabilities. This approach operates by dynamically fetching relevant documents or data snippets based on a given query and using this retrieved information to generate a coherent and contextually appropriate response.
 
-## Techniques
+# Techniques
 
-### 1) Simple RAG
+## 1) Simple RAG
 **Simple RAG** involves indexing, retrieving information from documents, and generating an answer. This process is illustrated in the diagram below:
 
 ![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/indexing_retrieval_generation.png)
+*Simple RAG Implementation*
+
+In the `simple_rag` folder, you will find three notebooks that demonstrate different aspects of implementing a Simple RAG:
+
+1. [Detailed Explanation Notebook](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/simple_rag.ipynb)
+    - This Jupyter Notebook provides a detailed explanation of the functions used or built throughout the project.
+
+2. [Chat Assistant in Terminal](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/main.py) and 3 [Helper Functions](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/helper_functions.py)
+    - The main file is designed to create a chat-like assistant that runs in the terminal. It has some prints with the information that and the model is retrieving.
+   ![](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/chat-terminal.png)
+    - The helper_function file is the code from the detailed explanation into a single function for ease of use.
 
 **What have I learned?**
 
