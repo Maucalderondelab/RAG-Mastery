@@ -34,7 +34,7 @@ In the `simple_rag` folder, you will find three notebooks that demonstrate diffe
 1. [Detailed Explanation Notebook](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/simple_rag.ipynb)
     - This Jupyter Notebook provides a detailed explanation of the functions used or built throughout the project.
 
-2. [Chat Assistant in Terminal](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/main.py) and 3 [Helper Functions](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/helper_functions.py)
+2. [Chat Assistant in Terminal](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/main.py) and 3 [Helper Functions](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/helper_function.py)
     - The main file is designed to create a chat-like assistant that runs in the terminal. It has some prints with the information that and the model is retrieving.
    ![](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/chat-terminal.png)
     - The helper_function file is the code from the detailed explanation into a single function for ease of use.
