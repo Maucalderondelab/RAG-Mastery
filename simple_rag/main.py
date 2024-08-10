@@ -36,7 +36,7 @@ def main() -> None:
     # Update the retriever in the rag instance
     rag.retriever = retriever
 
-    # Initialize the LLM
+    # Initialize the LLM    
     rag.llm: ChatMistralAI = rag.get_llm_model()
 
     print("\nWelcome to the NFL 🏈 Rule Assistant!")
