@@ -1,30 +1,55 @@
-# RAG-Mastery a personal path from basic to master in RAG
-Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented Generation (RAG). This repository is my space to document my journey from foundational concepts through to the most advanced techniques, helping me understand and apply these methods effectively.
+# RAG-Mastery: A Personal Path from Basic to Master in RAG
+Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented Generation (RAG). This repository is my space to document my journey from foundational concepts to the most advanced techniques, helping me understand and apply these methods effectively.
 
-## Table of Contents
+# Table of Contents
 
-- [Introduction to RAG](#introduction-to-rag)
+- [Introduction](#introduction)
 - [Understanding RAG](#understanding-rag)
   - [Concepts](#concepts)
   - [Math](#math)
 - [Techniques](#techniques)
-  - [Basic Retrieval](#basic-retrieval)
-  - [Using a Vector Database](#using-a-vector-database)
-  - [Document Search](#document-search)
-  - [Chat Assistant](#chat-assistant)
-  - [Conversational Assistant](#conversational-assistant)
-  - [Self-Corrective RAG](#self-corrective-rag)
-  - [Query RAG](#query-rag)
-  - [GraphRAG](#graphrag)
+  - [Simple RAG](#basic-retrieval)
+  - [RAG with chat history](#conversational-assistant)
+  - [RAG with a Vector Database](#using-a-vector-database)
   - [RAG-Query on Python](#rag-query-on-python)
+  - [Self-Corrective RAG](#self-corrective-rag)
+  - [Agents](#query-rag)
+  - [GraphRAG](#graphrag)
+  
 - [References](#references)
-## Introduction
-Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequience generation process. This framework combines the strengths of information retrieval and generative lenaguage models to enchance text generation capabilities. This approach operates by dynaically fetching relevant documents or data snippetss based on a given query and using this retrieved information to generate a coherent and contextually appropiate response.
 
-A simple diagram that show te key components and procces of RAG is this one.
-![Diagram Indexin, retrieval and generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/indexing_retrieval_generation.png)
+# Introduction
+Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequence generation process. This framework combines the strengths of information retrieval and generative language models to enhance text generation capabilities. This approach operates by dynamically fetching relevant documents or data snippets based on a given query and using this retrieved information to generate a coherent and contextually appropriate response.
 
-The image shows the system with Indexing, retrieval and generation.
+# Techniques
+
+## 1) Simple RAG
+**Simple RAG** involves indexing, retrieving information from documents, and generating an answer. This process is illustrated in the diagram below:
+
+![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/indexing_retrieval_generation.png)
+*Simple RAG Implementation*
+
+In the `simple_rag` folder, you will find three notebooks that demonstrate different aspects of implementing a Simple RAG:
+
+1. [Detailed Explanation Notebook](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/simple_rag.ipynb)
+    - This Jupyter Notebook provides a detailed explanation of the functions used or built throughout the project.
+
+2. [Chat Assistant in Terminal](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/main.py) and 3 [Helper Functions](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/helper_function.py)
+    - The main file is designed to create a chat-like assistant that runs in the terminal. It has some prints with the information that and the model is retrieving.
+   ![](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/chat-terminal.png)
+    - The helper_function file is the code from the detailed explanation into a single function for ease of use.
+
+**What have I learned?**
+
+I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/), a popular framework for the use of LLMs. I learned the basics, such as:
+- Using unstructured files
+- Splitting documents
+- Embedding split documents
+- Defining a chain for the system
+
+The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
+
+  
 
 ## References
 - [freedocecamp](https://www.freecodecamp.org/news/mastering-rag-from-scratch/)
