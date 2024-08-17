@@ -49,7 +49,7 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/), a popular
 
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
 
-## 1) RAG with chat history
+## 2) RAG with chat history
 We use the basics from our Simple_rag implementation, to be more specific we will be reusing:
 
 - Document loading
@@ -75,18 +75,19 @@ In the `RAG wiht chat history` folder, you will find three notebooks that demons
     - This Jupyter Notebook provides a detailed explanation of the functions used or built throughout the project.
 
 2. [Chat Assistant in Terminal](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/RAG_with_chat_history/main.py) and 3 [Helper Functions](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/RAG_with_chat_history/helper_function.py)
-    - The main file is designed to create a chat-like assistant that runs in the terminal. It has some prints with the information that and the model is retrieving.
-   ![](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/chat-terminal.png)
+    - The main file is designed to create a chat-like assistant that runs in the terminal. It includes print statements that display the information the model is retrieving. Additionally, the chat history is printed after each question. On the first question, the chat history is empty, but as we continue to ask questions, the assistant stores the history and uses that information to provide better responses.
+   ![](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/RAG_with_chat_history/chat_terminal.png)
     - The helper_function file is the code from the detailed explanation into a single function for ease of use.
 
 **What have I learned?**
 
-I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/), a popular framework for the use of LLMs. I learned the basics, such as:
-- Using unstructured files
-- Splitting documents
-- Embedding split documents
-- Defining a chain for the system
+I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/). I learned how to create a more complex RAG system:
 
+* History aware: A module designed to retrieve information while considering the chat history, ensuring context-aware responses.
+
+* Question answer: A structured chain that manages the flow of questions and answers, facilitating smooth and logical interactions.
+
+* Chain: The core Retrieval-Augmented Generation chain, which combines retrieval with generation to produce highly relevant and accurate responses.
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
 
 ## References
