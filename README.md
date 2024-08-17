@@ -49,7 +49,45 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/), a popular
 
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
 
-  
+## 1) RAG with chat history
+We use the basics from our Simple_rag implementation, to be more specific we will be reusing:
+
+- Document loading
+- Text splitting
+- Document retrieval
+
+These components will remain largely unchanged, as they form the foundation of our RAG system. We're now focusing on enhancing our RAG system with an advanced chat history component, this involves creating a sub-chain that reformulates the user's latest question by incorporating context from the entire conversation history. 
+
+$$
+(query, conversation\hspace{0.1cm}history) --> LLM --> rephrased\hspace{0.1cm}query --> retriever
+$$
+
+This process allows us to maintain conversation fluently while ensuring that each query to the retriever is relevant information.
+
+
+
+![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/RAG-chat-history.png))
+*Simple RAG Implementation*
+
+In the `RAG wiht chat history` folder, you will find three notebooks that demonstrate different aspects of implementing a history context for our RAG:
+
+1. [Detailed Explanation Notebook](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/RAG_with_chat_history/RAG_history.ipynb)
+    - This Jupyter Notebook provides a detailed explanation of the functions used or built throughout the project.
+
+2. [Chat Assistant in Terminal](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/RAG_with_chat_history/main.py) and 3 [Helper Functions](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/RAG_with_chat_history/helper_function.py)
+    - The main file is designed to create a chat-like assistant that runs in the terminal. It has some prints with the information that and the model is retrieving.
+   ![](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/simple_rag/chat-terminal.png)
+    - The helper_function file is the code from the detailed explanation into a single function for ease of use.
+
+**What have I learned?**
+
+I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/), a popular framework for the use of LLMs. I learned the basics, such as:
+- Using unstructured files
+- Splitting documents
+- Embedding split documents
+- Defining a chain for the system
+
+The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
 
 ## References
 - [freedocecamp](https://www.freecodecamp.org/news/mastering-rag-from-scratch/)
