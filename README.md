@@ -1,34 +1,32 @@
 # RAG-Mastery: A Personal Path from Basic to Master in RAG
+
 Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented Generation (RAG). This repository is my space to document my journey from foundational concepts to the most advanced techniques, helping me understand and apply these methods effectively.
 
 # Table of Contents
-
 - [Introduction](#introduction)
-- [Understanding RAG](#understanding-rag)
-  - [Concepts](#concepts)
-  - [Math](#math)
-- [Basic RAG](#techniques)
-  - [RAG](#basic-retrieval)
-  - [RAG with chat history](#conversational-assistant)
-  - [RAG with a Vector Database](#using-a-vector-database)
+- [Basic RAG](#basic-rag)
+  - [RAG](#rag)
+  - [RAG with chat history](#rag-with-chat-history)
+  - [RAG with a Vector Database](#rag-with-a-vector-database)
   - [RAG-Query on Python](#rag-query-on-python)
   - [GraphRAG](#graphrag)
-- [Advanced Techniques RAG](#AdvancedRAG)
-  - Self-Reflective RAG
-  - Multi-step Retrieval
-  - Hybrid Search
-  - Query Enhancement
-  - Adaptive Retrieval
-- [Agents](#query-rag)
-  
+- [Advanced RAG](#advanced-rag)
+  - [Self-Reflective RAG](#self-reflective-rag)
+  - [Multi-step Retrieval](#multi-step-retrieval)
+  - [Hybrid Search](#hybrid-search)
+  - [Query Enhancement](#query-enhancement)
+  - [Adaptive Retrieval](#adaptive-retrieval)
+- [Agents](#agents)
 - [References](#references)
 
 # Introduction
+
 Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequence generation process. This framework combines the strengths of information retrieval and generative language models to enhance text generation capabilities. This approach operates by dynamically fetching relevant documents or data snippets based on a given query and using this retrieved information to generate a coherent and contextually appropriate response.
 
 # Basic RAG
 
-## 1)RAG
+##1)  RAG
+
 **RAG or Simple RAG** involves indexing, retrieving information from documents, and generating an answer. This process is illustrated in the diagram below:
 
 ![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/indexing_retrieval_generation.png)
@@ -94,8 +92,8 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/). I learned
 
 * Chain: The core Retrieval-Augmented Generation chain, which combines retrieval with generation to produce highly relevant and accurate responses.
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
-# Basic RAG
-# Basic RAG
+# Advanced RAG
+# Agents
 
 
 ## References
