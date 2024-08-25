@@ -25,7 +25,7 @@ Retrieval-Augmented Generation (RAG) is a powerful framework that integrates ret
 
 # Basic RAG
 
-##1)  RAG
+## RAG
 
 **RAG or Simple RAG** involves indexing, retrieving information from documents, and generating an answer. This process is illustrated in the diagram below:
 
@@ -52,7 +52,7 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/), a popular
 
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
 
-## 2) RAG with chat history
+## RAG with chat history
 We use the basics from our Simple_rag implementation, to be more specific we will be reusing:
 
 - Document loading
@@ -92,11 +92,46 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/). I learned
 
 * Chain: The core Retrieval-Augmented Generation chain, which combines retrieval with generation to produce highly relevant and accurate responses.
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
+
+## RAG with a Vector Database
+
+[Content for RAG with a Vector Database]
+
+## RAG-Query on Python
+
+[Content for RAG-Query on Python]
+
+## GraphRAG
+
+[Content for GraphRAG]
 # Advanced RAG
+
+## Self-Reflective RAG
+
+[Content for Self-Reflective RAG]
+
+## Multi-step Retrieval
+
+[Content for Multi-step Retrieval]
+
+## Hybrid Search
+
+[Content for Hybrid Search]
+
+## Query Enhancement
+
+[Content for Query Enhancement]
+
+## Adaptive Retrieval
+
+[Content for Adaptive Retrieval]
+
 # Agents
 
+[Content for Agents]
 
-## References
+# References
+
 - [freedocecamp](https://www.freecodecamp.org/news/mastering-rag-from-scratch/)
 - [HuggingFaces](https://search.brave.com/search?q=huggingfaces+RAG&source=desktop)
 - [Paper](https://arxiv.org/abs/2005.11401)
