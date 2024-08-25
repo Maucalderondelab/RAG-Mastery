@@ -7,24 +7,29 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
 - [Understanding RAG](#understanding-rag)
   - [Concepts](#concepts)
   - [Math](#math)
-- [Techniques](#techniques)
-  - [Simple RAG](#basic-retrieval)
+- [Basic RAG](#techniques)
+  - [RAG](#basic-retrieval)
   - [RAG with chat history](#conversational-assistant)
   - [RAG with a Vector Database](#using-a-vector-database)
   - [RAG-Query on Python](#rag-query-on-python)
-  - [Self-Corrective RAG](#self-corrective-rag)
-  - [Agents](#query-rag)
   - [GraphRAG](#graphrag)
+- [Advanced Techniques RAG](#AdvancedRAG)
+  - Self-Reflective RAG
+  - Multi-step Retrieval
+  - Hybrid Search
+  - Query Enhancement
+  - Adaptive Retrieval
+- [Agents](#query-rag)
   
 - [References](#references)
 
 # Introduction
 Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequence generation process. This framework combines the strengths of information retrieval and generative language models to enhance text generation capabilities. This approach operates by dynamically fetching relevant documents or data snippets based on a given query and using this retrieved information to generate a coherent and contextually appropriate response.
 
-# Techniques
+# Basic RAG
 
-## 1) Simple RAG
-**Simple RAG** involves indexing, retrieving information from documents, and generating an answer. This process is illustrated in the diagram below:
+## 1)RAG
+**RAG or Simple RAG** involves indexing, retrieving information from documents, and generating an answer. This process is illustrated in the diagram below:
 
 ![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/indexing_retrieval_generation.png)
 *Simple RAG Implementation*
@@ -89,6 +94,9 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/). I learned
 
 * Chain: The core Retrieval-Augmented Generation chain, which combines retrieval with generation to produce highly relevant and accurate responses.
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
+# Basic RAG
+# Basic RAG
+
 
 ## References
 - [freedocecamp](https://www.freecodecamp.org/news/mastering-rag-from-scratch/)
