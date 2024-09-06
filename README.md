@@ -8,7 +8,7 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
   - [RAG](#rag)
   - [RAG with chat history](#rag-with-chat-history)
   - [RAG with a Vector Database](#rag-with-a-vector-database)
-  - [LLM executing Python code](#llm-excecution-python-code)
+  - [LLM executing Python code](#llm-executing-python-code)
   - [GraphRAG](#graphrag)
 - [Advanced RAG](#advanced-rag)
   - [Self-Reflective RAG](#self-reflective-rag)
