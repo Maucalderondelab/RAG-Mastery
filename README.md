@@ -8,7 +8,7 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
   - [RAG](#rag)
   - [RAG with chat history](#rag-with-chat-history)
   - [RAG with a Vector Database](#rag-with-a-vector-database)
-  - [RAG-Query on Python](#rag-query-on-python)
+  - [LLM executing Python code](#rag-query-on-python)
   - [GraphRAG](#graphrag)
 - [Advanced RAG](#advanced-rag)
   - [Self-Reflective RAG](#self-reflective-rag)
@@ -97,9 +97,9 @@ The chain consists of a template prompt that the system uses when a query or que
 
 [Content for RAG with a Vector Database]
 
-## RAG-Query on Python
+##  LLM executing Python code
 
-[Content for RAG-Query on Python]
+[Content  LLM executing Python code]
 
 ## GraphRAG
 
