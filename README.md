@@ -117,8 +117,15 @@ The workflow is:
 ##  LLM executing Python code
 ![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/llm_exec_python.png)
 
-[Content  LLM executing Python code]
-
+This project sets up a LangChain agent capable of executing Python code as part of its decision-making process.
+  * We package the Python REPL functionality for use by the LangChain agent
+  * We import the AgentFinish class from LangChain. This is typically used to represent the final output of an agent's execution.
+  * We initialize the agent using the initialize_agent function, with the following parameters:
+    * `tools=[python_tool]`: Provides the Python REPL tool to the agent.
+    *  `llm=llm`: Assigns a predefined language model to the agent.
+    * `agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION`: Specifies a zero-shot agent type.
+    * `verbose=True`: Enables detailed logging of the agent's process.
+    * `handle_parsing_errors=True`: Enables improved error handling.      
 
 # Advanced RAG
 
