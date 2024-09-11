@@ -7,9 +7,8 @@ Welcome to **RAG-Mastery**, my personal guide to mastering Retrieval-Augmented G
 - [Basic RAG](#basic-rag)
   - [RAG](#rag)
   - [RAG with chat history](#rag-with-chat-history)
-  - [RAG with a Vector Database](#rag-with-a-vector-database)
+  - [Retrieval with a Vector Database](#retrieval-with-a-vector-database)
   - [LLM executing Python code](#llm-executing-python-code)
-  - [GraphRAG](#graphrag)
 - [Advanced RAG](#advanced-rag)
   - [Self-Reflective RAG](#self-reflective-rag)
   - [Multi-step Retrieval](#multi-step-retrieval)
@@ -93,17 +92,36 @@ I used [LangChain](https://python.langchain.com/v0.2/docs/tutorials/). I learned
 * Chain: The core Retrieval-Augmented Generation chain, which combines retrieval with generation to produce highly relevant and accurate responses.
 The chain consists of a template prompt that the system uses when a query or question is given. With the context (retrieved information), it tries to provide an answer.
 
-## RAG with a Vector Database
+## Retrieval with a Vector Database
+This project explores 2 ways to perform searches in a SQL database using Language Models (LLMs). We're using a PostgreSQL database containing information about NFL teams.
+
+![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/RAG-chat-history.png)
 
 [Content for RAG with a Vector Database]
 
+We import the following classes from Langchain:
+- `SQLDatabase`: For connecting and interacting with our database
+- `SQLDatabaseChain`: Used to create a chain that generates SQL queries and interprets the results using our LLM
+
+The workflow is:
+
+1. Test the database connection to ensure it's running properly and can perform queries.
+2. Create a more complex database chain, importing libraries for creating message templates.
+3. Define key functions:
+   - `retrieve_from_db`: Uses the `db_chain` to execute queries and extract results from the returned dictionary.
+   - `generate`: Creates responses based on the following components:
+     - A `system_message` that sets the role and behavior for the AI.
+     - A template that structures the human's input, including placeholders for the actual query and the database context.
+     - Calls the LLM to generate and return the response.
+
+
+
 ##  LLM executing Python code
+![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/llm_exec_python.png)
 
 [Content  LLM executing Python code]
 
-## GraphRAG
 
-[Content for GraphRAG]
 # Advanced RAG
 
 ## Self-Reflective RAG
