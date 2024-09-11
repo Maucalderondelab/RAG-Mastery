@@ -97,8 +97,6 @@ This project explores 2 ways to perform searches in a SQL database using Languag
 
 ![Diagram Indexing, Retrieval, and Generation](https://github.com/Maucalderondelab/RAG-Mastery/blob/main/Diagrams/RAG-chat-history.png)
 
-[Content for RAG with a Vector Database]
-
 We import the following classes from Langchain:
 - `SQLDatabase`: For connecting and interacting with our database
 - `SQLDatabaseChain`: Used to create a chain that generates SQL queries and interprets the results using our LLM
